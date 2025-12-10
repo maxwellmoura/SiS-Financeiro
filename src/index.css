@@ -1,0 +1,256 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f5f7fb;
+  color: #222;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: #1976d2;
+  color: #fff;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.app-nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.nav-link {
+  color: #e3f2fd;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-link.active {
+  background: #fff;
+  color: #1976d2;
+  border-color: #1976d2;
+}
+
+.app-main {
+  flex: 1;
+  padding: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .app-main {
+    padding: 18px;
+  }
+  .app-nav {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 14px 16px;
+    align-items: stretch;
+  }
+  .app-header h1 {
+    font-size: 1.2rem;
+  }
+  .app-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 8px;
+  }
+  .nav-link {
+    text-align: center;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header h1 {
+    font-size: 1.05rem;
+  }
+  .app-nav {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 6px;
+  }
+  .nav-link {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+  .app-main {
+    padding: 14px;
+  }
+}
+
+.app-footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #555;
+  background: #e3f2fd;
+}
+
+.page h2 {
+  margin-top: 0;
+}
+
+.chart-container {
+  margin-top: 20px;
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+}
+
+.table-basic {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08);
+}
+
+.table-basic th,
+.table-basic td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #e0e6f0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.table-basic th:first-child,
+.table-basic td:first-child {
+  padding-right: 8px;
+  text-align: center;
+  border-right: 1px solid #e0e6f0;
+}
+
+.table-basic th:last-child,
+.table-basic td:last-child {
+  white-space: nowrap;
+  width: 1%;
+  padding-left: 12px;
+  border-left: 1px solid #e0e6f0;
+}
+
+.table-basic thead {
+  background: #e3f2fd;
+}
+
+.table-basic tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.month-selector {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.month-selector .field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.month-selector select {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  min-width: 160px;
+}
+.report-export {
+  margin: 12px 0 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #f0f6ff;
+  border: 1px solid #d6e4ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.report-export h3 {
+  margin: 0 0 4px 0;
+}
+
+.report-export p {
+  margin: 0;
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+.report-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.report-status {
+  margin: 4px 0 12px;
+  color: #0f4c81;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+button {
+  --button_radius: 0.75em;
+  --button_color: #e8e8e8;
+  --button_outline_color: #000000;
+  font-size: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--button_radius);
+  background: transparent;
+  padding: 0.05em;
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.3em 1.2em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.12em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  transform: translateY(-0.22em);
+}
+
+button:active .button_top {
+  transform: translateY(0);
+}
