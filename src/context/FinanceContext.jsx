@@ -233,7 +233,7 @@ export function FinanceProvider({ children }) {
     setDb((prev) => ({
       ...prev,
       gastos: prev.gastos.map((g) =>
-        g.id === id ? { ...g, pagos: !Boolean(g.pagos) } : g
+        g.id === id ? { ...g, pagos: !g.pagos } : g
       ),
     }));
   };
@@ -288,7 +288,7 @@ export function FinanceProvider({ children }) {
         categorias: parsed.categorias || [],
         gastos: parsed.gastos || [],
       });
-    } catch (e) {
+    } catch {
       alert("JSON inválido!");
     }
   };
@@ -324,4 +324,5 @@ export function FinanceProvider({ children }) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useFinance = () => useContext(FinanceContext);

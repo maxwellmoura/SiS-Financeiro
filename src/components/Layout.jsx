@@ -29,7 +29,7 @@ export default function Layout({ children }) {
             to="/gerenciar-categorias"
             className={isActive("/gerenciar-categorias")}
           >
-            Categorias
+           Gerenciar Categorias
           </Link>
           <Link to="/lancamentos" className={isActive("/lancamentos")}>
             Lançamentos
