@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { useFinance } from "../context/FinanceContext";
-import { PieChart, Pie, Cell, Legend, Tooltip, ResponsiveContainer } from "recharts";
+import { PieChart, 
+  Pie, 
+  Cell, 
+  Legend, 
+  Tooltip, 
+  ResponsiveContainer
+ } from "recharts";
 
 export default function Dashboard() {
   const { getTotalByCategory } = useFinance();

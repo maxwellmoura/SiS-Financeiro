@@ -1,18 +1,40 @@
+/* Novo CSS para index.css */
 :root {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #f5f7fb;
-  color: #222;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 body {
   margin: 0;
-  overflow-x: hidden;
+  padding: 0;
 }
 
 .app-container {
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1976d2;
+  color: white;
+}
+
+.app-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.nav-link:hover {
+  background-color: #1565c0;
 }
 
 .app-header {

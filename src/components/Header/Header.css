@@ -1,0 +1,12 @@
+/* Novo CSS para Header */
+.header {
+  background-color: #1976d2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
