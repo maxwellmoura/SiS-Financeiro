@@ -7,7 +7,7 @@ import {
   FaCalendarAlt,
   FaClipboardList,
 } from "react-icons/fa";
-import "./Sidebar.css";
+import "./sidebar.css";
 
 import Header from "../Header/Header";
 

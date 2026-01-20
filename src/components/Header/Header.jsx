@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import MarcaSiS from "../../img/MarcaSiS.png";
+import MarcaSiS from "../../img/MarcaSis.png";
 
 const Header = () => {
   return (
