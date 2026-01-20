@@ -84,6 +84,13 @@ body {
   margin: 0 auto;
   width: 100%;
 }
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #555;
+  background: #e3f2fd;
+}
 @media (max-width: 1024px) {
   .app-main {
     padding: 18px;

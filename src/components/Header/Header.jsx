@@ -1,10 +1,11 @@
 import React from "react";
 import "./Header.css";
+import MarcaSiS from "../../img/MarcaSiS.png";
 
 const Header = () => {
   return (
     <header className="header">
-      <h1>Financeiro SIS</h1>
+      <img src={MarcaSiS} alt="SiS Financeiro" className="sidebar-logo" />
     </header>
   );
 };

@@ -8,13 +8,14 @@ import {
   FaClipboardList,
 } from "react-icons/fa";
 import "./Sidebar.css";
-import MarcaSiS from "../../img/MarcaSiS.png";
+
+import Header from "../Header/Header";
 
 const Sidebar = () => {
   return (
     <aside className="sidebar">
       <nav>
-        <img src={MarcaSiS} alt="SiS Financeiro" className="sidebar-logo" />
+        <Header />
         <ul>
           <li>
             <Link className="nav-link" to="/dashboard">
